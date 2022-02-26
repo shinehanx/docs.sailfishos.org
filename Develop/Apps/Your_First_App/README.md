@@ -1,20 +1,20 @@
 ---
-title: Your First App
+title: 第一个应用程序
 permalink: Develop/Apps/Your_First_App/
 parent: Apps
 layout: default
 nav_order: 700
 ---
 
-## Your First App
+## 你的第一个应用
 
-If you don’t have the SDK installed and running yet, follow the [installation guide](/Tools/Sailfish_SDK/Installation).
+如果您尚未安装和运行SDK，请按照[安装指南](/Tools/Sailfish_SDK/Installation)进行操作。
 
-### Launch Sailfish IDE
+### 启动Sailfish IDE
 
-You can launch from the ‘Sailfish IDE’ entry in the system menu (or from `~/SailfishOS/bin/qtcreator` if you’re a Linux terminal person).
+您可以从系统菜单中的“Sailfish IDE”条目启动（如果您是Linux终端用户，则可以从“~/sailfishos/bin/qtcreator”启动）。
 
-As an example, on Ubuntu, open the dash, type in ‘sailfish’. Click on the ‘Sailfish IDE’ icon to launch the IDE.
+举个例子，在Ubuntu上，打开破折号，输入“Sailfish”。单击“Sailfish IDE”图标以启动IDE。
 
 <a href="Ubuntu_dash_QtC.png" style="width:30em;display:block">
     <img src="Ubuntu_dash_QtC.png"
@@ -22,11 +22,11 @@ As an example, on Ubuntu, open the dash, type in ‘sailfish’. Click on the �
          class="md_thumbnail" style="max-width:100%"/>
 </a>
 
-### Create a Sailfish UI Project
+### 创建Sailfish UI项目
 
-The SDK comes with a Sailfish UI template project that makes it very easy to get started.
+SDK附带了一个Sailfish UI模板项目，可以非常轻松地开始使用。
 
-1\. In the IDE, click on **File→New File** or **Project**.
+1\. 在IDE中，单击 **File→New File** 或者 **Project**.
 
 <a href="QtC_New_Project.png" style="width:30em;display:block">
     <img src="QtC_New_Project.png"
@@ -34,7 +34,7 @@ The SDK comes with a Sailfish UI template project that makes it very easy to get
          class="md_thumbnail" style="max-width:100%"/>
 </a>
 
-2\. Select **Applications→Sailfish OS Qt Quick Application** and then click **Choose**.
+2\. 选择 **Applications→Sailfish OS Qt Quick Application** 然后点击 **Choose**.
 
 <a href="QtC_Choose_Template.png" style="width:30em;display:block">
     <img src="QtC_Choose_Template.png"
@@ -42,7 +42,7 @@ The SDK comes with a Sailfish UI template project that makes it very easy to get
          class="md_thumbnail" style="max-width:100%"/>
 </a>
 
-3\. Give a name to your project. Ensure it is created somewhere under your home directory and click **Next**.
+3\. 为您的项目命名。确保它是在您的主目录下的某个位置创建的，然后单击 **Next**.
 
 <a href="QtC_Template_01.png" style="width:30em;display:block">
     <img src="QtC_Template_01.png"
@@ -50,7 +50,7 @@ The SDK comes with a Sailfish UI template project that makes it very easy to get
          class="md_thumbnail" style="max-width:100%"/>
 </a>
 
-4\. You can edit the short description of your project or just click **Next**.
+4\. 您可以编辑项目的简短描述，或者只需单击 **Next**.
 
 <a href="QtC_Template_03.png" style="width:30em;display:block">
     <img src="QtC_Template_03.png"
@@ -58,7 +58,7 @@ The SDK comes with a Sailfish UI template project that makes it very easy to get
          class="md_thumbnail" style="max-width:100%"/>
 </a>
 
-5\. Select a build system. The default (qmake) is a good choice, but we do support CMake as well, so if you are more familiar with it you may want to try it instead.
+5\. 选择生成系统。默认（qmake）是一个不错的选择，但我们也支持cmake，因此如果您更熟悉它，您可能想尝试它。
 
 <a href="Buildsystem.png" style="width:30em;display:block">
     <img src="Buildsystem.png"
@@ -66,7 +66,7 @@ The SDK comes with a Sailfish UI template project that makes it very easy to get
          class="md_thumbnail" style="max-width:100%"/>
 </a>
 
-6\. Select the kit(s) used for building the project. Select `SailfishOS-<version>-armv7hl` for 32-bit ARM devices, `SailfishOS-<version>-aarch64` for 64-bit ARM devices (e.g. Sony Xperia 10 II) or `SailfishOS-<version>-i486` for the emulator.
+6\. 选择用于生成项目的工具包。为32位ARM设备选择`SailfishOS-<version>-armv7hl`, 为64位ARM设备（例如Sony Xperia 10 II）选择`SailfishOS-<version>-aarch64`，或者给模拟器选择`SailfishOS-<version>-i486`
 
 <a href="Kits.png" style="width:30em;display:block">
     <img src="Kits.png"
@@ -74,7 +74,7 @@ The SDK comes with a Sailfish UI template project that makes it very easy to get
          class="md_thumbnail" style="max-width:100%"/>
 </a>
 
-6\. Click **Finish**.
+6\. 单击 **Finish**.
 
 <a href="QtC_Template_04.png" style="width:30em;display:block">
     <img src="QtC_Template_04.png"
@@ -82,7 +82,7 @@ The SDK comes with a Sailfish UI template project that makes it very easy to get
          class="md_thumbnail" style="max-width:100%"/>
 </a>
 
-7\. The project template is imported into your project and opened in the editor.
+7\. 项目模板将导入到项目中并在编辑器中打开。
 
 <a href="QtC_Open_Project.png" style="width:30em;display:block">
     <img src="QtC_Open_Project.png"
@@ -90,13 +90,13 @@ The SDK comes with a Sailfish UI template project that makes it very easy to get
          class="md_thumbnail" style="max-width:100%"/>
 </a>
 
-### Launch the Build Engine and the Emulator
+### 启动构建引擎和模拟器
 
-The Sailfish SDK uses a build engine (virtual machine or Docker container) to compile your code and another virtual machine to run an emulator. If these are not running when you attempt to build or deploy an application you will be asked to start them.
+Sailfish SDK使用构建引擎（虚拟机或Docker容器）来编译代码，并使用另一个虚拟机来运行模拟器。当您尝试构建或部署应用程序时，如果这些应用程序未运行，系统将要求您启动它们。
 
-> Note: The Build Engine needs access to your source code to compile it and by default your home directory is shared – this is why the project should be in your home.
+> 注意：构建引擎需要访问您的源代码来编译它，并且默认情况下，您的主目录是共享的—这就是为什么项目应该在您的主目录中。
 
-When a Sailfish OS project is open, the SDK automatically displays two control buttons in the left toolbar for starting/stopping the Build Engine and Emulator.
+当Sailfish OS项目打开时，SDK会自动在左侧工具栏中显示两个控制按钮，用于启动/停止构建引擎和模拟器。
 
 <a href="Toolbar_Icons.png" style="width:30em;display:block">
     <img src="Toolbar_Icons.png"
@@ -104,39 +104,39 @@ When a Sailfish OS project is open, the SDK automatically displays two control b
          class="md_thumbnail" style="max-width:100%"/>
 </a>
 
-1. Click on the ![Build_Engine_Icon.png](/Tools/Sailfish_SDK/FAQ/Build_Engine_Icon.png "Build_Engine_Icon.png") icon to launch the Build Engine.\
-   The Build Engine is started in the background and the icon will turn gray until the build engine has booted up.
+1. 单击 ![Build_Engine_Icon.png](/Tools/Sailfish_SDK/FAQ/Build_Engine_Icon.png "Build_Engine_Icon.png") 图标以启动生成引擎.\
+   构建引擎在后台启动，图标将变为灰色，直到构建引擎启动。
 
-1. Click on the ![Emulator_Icon.png](/Tools/Sailfish_SDK/FAQ/Emulator_Icon.png "Emulator_Icon.png") icon to launch the emulator.\
-   NOTE: This icon is only available if the `SailfishOS-<version>-i486` kit is active. You can activate the `SailfishOS-<version>-i486` kit from menu **Build → Open Build and Run Kit Selector…**.
+1. 单击![Emulator_Icon.png](/Tools/Sailfish_SDK/FAQ/Emulator_Icon.png "Emulator_Icon.png") 图标启动模拟器\
+   注意：此图标仅在 `SailfishOS-<version>-i486` 套件处于活动状态时可用。您可以从菜单 **Build → Open Build and Run Kit Selector…** （打开构建和运行工具包选择器）中激活`SailfishOS-<version>-i486` 工具包.
 
-A new VirtualBox window opens and boots up the emulator.
+将打开一个新的VirtualBox窗口并启动模拟器。
 
-#### Successful connection
+#### 连接成功
 
-When the Qt Creator can successfully connect to both the Emulator and the Build Engine, the icons are updated as shown below.
+当QT创建器可以成功连接到模拟器和构建引擎时，图标将更新，如下所示。
 
-Before connection:
+连接前：
   - <a href="Toolbar_Icons_Start.png" style="width:30em;display:block">
       <img src="Toolbar_Icons_Start.png"
            alt="Toolbar_Icons_Start.png"
            class="md_thumbnail" style="max-width:100%"/>
     </a>
 
-Connection established:
+已建立连接：
   - <a href="Toolbar_Icons_Stop.png" style="width:30em;display:block">
       <img src="Toolbar_Icons_Stop.png"
            alt="Toolbar_Icons_Stop.png"
            class="md_thumbnail" style="max-width:100%"/>
     </a>
 
-### Create a Connection to Sailfish OS Hardware Device
+### 创建到Sailfish OS硬件设备的连接
 
-Sailfish SDK can also deploy application to Sailfish OS hardware device. This feature requires a valid Sailfish OS hardware device to be set-up with USB or WLAN connection to computer and making sure that it is possible to connect to it over SSH with password. When using Sailfish OS hardware device as development device in SDK a valid kit needs to be selected (such as `SailfishOS-armv7hl` target).
+Sailfish SDK还可以将应用程序部署到Sailfish OS硬件设备。此功能要求有效的Sailfish OS硬件设备设置为与计算机的USB或WLAN连接，并确保可以使用密码通过SSH连接到该设备。在SDK中使用Sailfish OS硬件设备作为开发设备时，需要选择有效的工具包（例如 `SailfishOS-armv7hl` 目标）。
 
-Sailfish OS hardware device setup is done using Qt Creator’s device settings. Depending on your host environment this is found from either the menu **Tools→Options→Devices** or **Qt Creator→Preferences→Devices**. In this settings view, click **Add…** to start creating device settings.
+Sailfish OS硬件设备设置是使用QT Creator的设备设置完成的。根据您的主机环境，可从菜单 **Tools→Options→Devices** 或 **Qt Creator→Preferences→Devices**中找到。在此设置视图中，单击 **Add…** 开始创建设备的设置。
 
-Unless some custom configuration is used, these default values work just fine. If you encounter timeouts with SSH connections on your PC, you can modify the timeout setting also after the device has been created. Connect the device now, enter your SSH password and press Test Connection as described in the dialog. On successful completion, you can click Next to continue.
+除非使用一些自定义配置，否则这些默认值可以正常工作。如果您在PC上使用SSH连接时遇到超时，您也可以在创建设备后修改超时设置。现在连接设备，输入您的SSH密码，然后按对话框中所述的“Test Connection”。成功完成后，您可以单击“Next”继续。
 
 <a href="HW_Select.png" style="width:30em;display:block">
     <img src="HW_Select.png"
@@ -144,7 +144,7 @@ Unless some custom configuration is used, these default values work just fine. I
          class="md_thumbnail" style="max-width:100%"/>
 </a>
 
-In the next dialog, you can review and further adjust connection related configuration. Click **Next** to continue.
+在下一个对话框中，您可以查看并进一步调整与连接相关的配置。单击 **Next** 继续。
 
 <a href="HW_Configure.png" style="width:30em;display:block">
     <img src="HW_Configure.png"
@@ -152,17 +152,17 @@ In the next dialog, you can review and further adjust connection related configu
          class="md_thumbnail" style="max-width:100%"/>
 </a>
 
-In next dialog just click **Next** unless you want to abort device creation. In that case click **Cancel**.
+在下一个对话框中，只需单击**Next** ，除非您想中止设备创建。在这种情况下，单击**Cancel**.
 
-Qt Creator shall then create device configuration, deploy the SSH key to device and finally test the setup. In those dialogs user can only click **Close** to go to next phase.
+然后，QT Creator应创建设备配置，将SSH密钥部署到设备，最后测试设置。在这些对话框中，用户只能单击**Close** 进入下一阶段。
 
-Once tested and verified, Qt Creator shows a view which shows the created device. Notice that configuration files are not updated yet, so if you don’t press **OK** or **Apply** changes will not be saved.
+经过测试和验证后，QT Creator会显示一个视图，其中显示了创建的设备。请注意，配置文件尚未更新，因此如果您不按**OK**或**Apply**，则不会保存更改。
 
-That’s it. Now Qt Creator can deploy your application to device.
+就这样了。现在，QT Creator可以将您的应用程序部署到设备。
 
-### Set ARM Kit to Deploy to Device
+### 将ARM套件设置为部署到设备
 
-By default ARM kit will create RPM binaries, it won’t even try to deploy to device. The deploy option **Build RPM Package for Manual Deployment** is selected. This can be changed from Qt Creator’s main view with deploy options, select **Deploy as RPM Package** or **Deploy by Copying Binaries**.
+默认情况下，ARM Kit将创建RPM二进制文件，它甚至不会尝试部署到设备。已选择部署选项**Build RPM Package for Manual Deployment** (构建用于手动部署的RPM包)。这可以从QT Creator的主视图中使用部署选项进行更改，选择**Deploy as RPM Package** (部署为RPM包) 或 **Deploy by Copying Binaries** (通过复制二进制文件部署).
 
 <a href="ARM_Kit_Select_Deploy.png" style="width:30em;display:block">
     <img src="ARM_Kit_Select_Deploy.png"
@@ -170,14 +170,14 @@ By default ARM kit will create RPM binaries, it won’t even try to deploy to de
          class="md_thumbnail" style="max-width:100%"/>
 </a>
 
-Congratulations! Now you can build and deploy to Sailfish ARM device.
+祝贺！现在，您可以构建并部署到Sailfish ARM设备。
 
-### Build and Deploy the App
+### 构建和部署应用
 
-Press the ![QtC_Run_Button.png](QtC_Run_Button.png "QtC_Run_Button.png")
-button in the toolbar to compile and run the project on the emulator.
+按下 ![QtC_Run_Button.png](QtC_Run_Button.png "QtC_Run_Button.png")
+按钮在模拟器上编译和运行项目。
 
-That’s it! You just ran your first Sailfish OS application. It should be running in the emulator as shown below.
+就是它！您刚刚运行了第一个Sailfish OS应用程序。它应该在模拟器中运行，如下所示。
 
 <a href="Emulator_Screenshot_01.png" style="width:30em;display:block">
     <img src="Emulator_Screenshot_01.png"
@@ -185,8 +185,8 @@ That’s it! You just ran your first Sailfish OS application. It should be runni
          class="md_thumbnail" style="max-width:100%"/>
 </a>
 
-#### Build RPM Package for Manual Deployment
+#### 构建用于手动部署的RPM包
 
-The default deploy option is to only build RPM packages. In this case the Run and Debug buttons are replaced with single Deploy button, that can be used to create the RPM packages. Alternatively the menu **Build → Deploy Project “projectname”** can be used to trigger package creation.
+默认部署选项是仅构建RPM包。在这种情况下，Run和Debug按钮被替换为单个Deploy按钮，该按钮可用于创建RPM包。或者，菜单**Build → Deploy Project “projectname”** 可用于触发包创建。
 
-Next steps: exploring how to [use the application](/Develop/Apps/Using_Sailfish_OS_Apps).
+后续步骤：探索如何 [使用这个应用程序](/Develop/Apps/Using_Sailfish_OS_Apps).

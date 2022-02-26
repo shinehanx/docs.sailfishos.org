@@ -137,7 +137,7 @@ Sailfish SDK包括Sailfish Silica，这是一个用于开发您自己的Sailfish
 
 ## Sailfish Pickers
 
-，了解有关如何开发Sailfish风格应用程序的更多信息。
+Sailfish Pickers模块提供了一组Picker组件，用于在开发您自己的Sailfish应用程序时选择内容。
 
 阅读 [Sailfish Pickers API 文档](https://sailfishos.org/develop/docs/sailfish-components-pickers/)了解更多信息。
 
