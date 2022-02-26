@@ -1,29 +1,29 @@
 ---
-title: Code Walkthrough
+title: 代码演练
 permalink: Develop/Apps/Code_Walkthrough/
 parent: Apps
 layout: default
 nav_order: 400
 ---
 
-## Code Walkthrough
+## 代码演练
 
-The template contains the essentials of a simple Sailfish OS application. We’ll go through the code to help understand the essentials.
+该模板包含了一个简单的Sailfish OS应用程序的基本内容。我们将通过代码来帮助理解这些要点。
 
-When generating a new project based on the Sailfish OS application template, some of the files in the Qt Creator project are named after the name of the project. In the following discussion the project name “myfirstapp” is used as an example.
+当基于Sailfish OS应用程序模板生成一个新项目时，Qt Creator项目中的一些文件是以项目名称命名的。在下面的讨论中，以项目名称 "myfirstapp "为例。
 
-### Application Entry
+### 应用程序条目
 ```
 => src/myfirstapp.cpp
 ```
 
-Every Sailfish application must define a simple Qt C++ application project that creates a QQuickView and instantiates a QML file with an ApplicationWindow as the top-level item. However, other than implementing the QML file itself, you don’t need to do anything else to accomplish this.
+每个Sailfish应用程序都必须定义一个简单的Qt C++应用程序项目，创建一个QQuickView，并实例化一个QML文件，将ApplicationWindow作为顶级项目。然而，除了实现QML文件本身之外，你不需要做任何其他事情来完成这个任务。
 
-Assuming you named your project “myfirstapp”, the Sailfish OS application template generates the source file src/myfirstapp.cpp that does the heavy lifting for you. This file implements the entry point to your application by simply passing the argument count and argument array to the function SailfishApp::main(). This function in turn creates the required QGuiApplication and QQuickView instances and loads your main QML file.
+假设你把你的项目命名为 "myfirstapp"，Sailfish OS应用程序模板会生成源代码文件src/myfirstapp.cpp，为你完成繁重的工作。这个文件实现了你的应用程序的入口，只需将参数计数和参数数组传递给函数SailfishApp::main()。这个函数依次创建所需的QGuiApplication和QQuickView实例并加载你的主QML文件。
 
-Note that the name of the QML file is not actually passed to SailfishApp::main(). Instead, the function expects the QML file name to be based on the name of your target. Again, if your project name is “myfirstapp”, the Qt project file will contain the declaration TARGET = myfirstapp, and main() will load the QML file qml/myfirstapp.qml.
+请注意，QML文件的名称实际上并没有被传递给SailfishApp::main()。相反，该函数期望QML文件的名称是基于你的TARGET名称。同样，如果你的项目名称是 "myfirstapp"，Qt项目文件将包含声明TARGET=myfirstapp，而main()将加载QML文件qml/myfirstapp.qml。
 
-The application template creates the QML file for you but you should be aware of the fact that the file cannot be renamed without updating the TARGET definition in the .pro file.
+应用程序模板为你创建了QML文件，但你应该注意的是，如果不更新.pro文件中的TARGET定义，该文件就不能被重命名。
 ```cpp
 #ifdef QT_QML_DEBUG
 #include
@@ -47,19 +47,19 @@ int main(int argc, char *argv[])
 }
 ```
 
-### Top-level QML file
+### 顶层的QML文件
 ```
 => qml/myfirstapp.qml
 ```
 
-All QML files used by the application are in the directory qml or its subdirectories. When the application starts, the SailfishApp::main() function first loads the QML file qml/myfirstapp.qml.
+所有应用程序使用的QML文件都在目录qml或其子目录下。当应用程序启动时，SailfishApp::main()函数首先加载QML文件qml/myfirstapp.qml。
 ```qml
 import QtQuick 2.0
 import Sailfish.Silica 1.0
 import "pages"
 ```
 
-The first two import statements allow the application to import the Qt Quick and Sailfish Silica modules we will later use. In addition, the final import statement makes the QML files under the pages directory available to myfirstapp.qml.
+前两条import语句允许应用程序导入我们以后要使用的Qt Quick和Sailfish Silica模块。此外，最后一条import语句使pages目录下的QML文件对myfirstapp.qml可用。
 ```qml
 ApplicationWindow
 {
@@ -68,9 +68,9 @@ ApplicationWindow
 }
 ```
 
-ApplicationWindow is the top-level type of all Sailfish Silica applications. The initialPage property specifies the first page to display when the application is opened. The cover property sets the active cover to be displayed when the application is pushed to the background.
+ApplicationWindow是所有Sailfish Silica应用程序的顶级类型。initialPage属性指定了应用程序被打开时要显示的第一页。cover属性设置应用程序被推到后台时要显示的活动封面。
 
-### First Page of the Application
+### 应用程序的第一页
 ```
 => qml/pages/FirstPage.qml
 
@@ -80,13 +80,13 @@ Page {
     id: page
 ```
 
-Here, we first create a Page object which is simply a container for the contents of the page. To enable a pull-down menu, we need to create a flickable item which places its children on a surface that can be pulled and flicked. We do this using the SilicaFlickable component. Sailfish Silica provides the types SilicaFlickable, SilicaListView, and SilicaGridView which are styled versions of the Qt Quick flickable, list view, and grid view types.
+在这里，我们首先创建一个Page对象，它只是一个页面内容的容器。为了实现下拉菜单，我们需要创建一个可弹出的项目，把它的孩子放在一个可以被拉动和弹出的表面。我们使用SilicaFlickable组件来做到这一点。Sailfish Silica提供了SilicaFlickable、SilicaListView和SilicaGridView的类型，它们是Qt Quick flickable、list view和grid view类型的风格化版本。
 ```qml
 SilicaFlickable {
         anchors.fill: parent
 ```
 
-Next, we add a pulldown menu with one menu item, labelled “Show Page 2″. We then attach an onClicked action to the MenuItem which will push the second page onto the top of the pageStack (provided by ApplicationWindow). Note that PullDownMenu and PushUpMenu must always be nested inside a SilicaFlickable, SilicaListView, or SilicaGridView.
+接下来，我们添加一个带有一个菜单项的下拉菜单，标记为 "Show Page 2"。然后我们给MenuItem附加一个onClicked动作，它将把第二页推到pageStack的顶部（由ApplicationWindow提供）。注意，PullDownMenu和PushUpMenu必须总是嵌套在SilicaFlickable、SilicaListView或SilicaGridView内。
 ```qml
         PullDownMenu {
             MenuItem {
@@ -96,12 +96,12 @@ Next, we add a pulldown menu with one menu item, labelled “Show Page 2″. We 
          }
 ```
 
-We set the height of SilicaFlickable to be same as the height of its child item called ‘column’ (see next paragraph).
+我们将SilicaFlickable的高度设置为与它的子项 "column.height"的高度相同（见下段）。
 ```qml
 contentHeight: column.height
 ```
 
-Finally, we arrange the content vertically. The Column element positions its child items so that they are vertically aligned and not overlapping. We also provide the page title/header using the PageHeader element. The page header is always placed at the top of content. We add a welcome text to our page using the Label element.
+最后，我们垂直地安排内容。栏目元素定位它的子项目，使它们在垂直方向上对齐，不重叠。我们还使用PageHeader元素提供页面标题/页眉。页面标题总是放置在内容的顶部。我们使用Label元素为我们的页面添加欢迎文字。
 ```qml
         Column {
             id: column
@@ -120,14 +120,14 @@ Finally, we arrange the content vertically. The Column element positions its chi
         }
 ```
 
-The column spacing, label x, color, and font.pixelSize properties use values from Theme type instead of hard coding sizes or colours. This ensures the application adapts to the currently active theme and does not clash with system provided components.
+列距、标签X、颜色和font.pixelSize属性使用来自Theme类型的值，而不是硬编码的尺寸或颜色。这确保了应用程序适应当前活动的主题，并且不会与系统提供的组件发生冲突。
 
-### Second Page of the Application
+### 应用程序的第二页
 ```
 => qml/pages/SecondPage.qml
 ```
 
-The second page is pretty simple. It declares SilicaListView which has a model to define the data to be displayed and a delegate to define how each index of the data should be displayed.
+第二个页面非常简单。它声明了SilicaListView，它有一个模型来定义要显示的数据和一个委托delegate来定义数据的每个索引应该如何显示。
 ```qml
 Page {
     id: page
@@ -154,12 +154,12 @@ Page {
 }
 ```
 
-### Application Cover
+### 应用程序的封面
 ```
 => qml/cover/CoverPage.qml
 ```
 
-Covers are the visual representations of backgrounded applications that are displayed on the running applications screen. We create a cover using a CoverBackground element with a centered label inside it.
+封面是显示在运行中的应用程序屏幕上的背景应用程序的可视化表示。我们用一个CoverBackground元素创建一个封面，里面有一个居中的标签。
 ```qml
 CoverBackground {
     Label {
@@ -169,7 +169,7 @@ CoverBackground {
     }
 ```
 
-A cover can specify a list of actions that can be performed on the background application. The list is defined using CoverActionList element. Each CoverActionList can define up to two CoverAction items to specify the actions.
+一个封面可以指定一个可以在后台应用程序上执行的动作列表。这个列表是用CoverActionList元素定义的。每个CoverActionList最多可以定义两个CoverAction项目来指定动作。
 ```qml
 CoverActionList {
         id: coverAction
@@ -184,32 +184,32 @@ CoverActionList {
     }
 ```
 
-In the snippet above we display next and pause actions on the cover using two icons. You can also attach signal handlers to these actions to perform a specific function and whilst we won’t cover that in detail in this tutorial, you can try adding onTriggered: console.log("Cover next") to the first CoverAction. Be sure to stop, rebuild, and rerun your application to see the results.
+在上面的片段中，我们使用两个图标在封面上显示下一个和暂停的动作。你也可以给这些动作附加信号处理程序，以执行特定的功能，虽然我们不会在本教程中详细介绍，但你可以尝试在第一个CoverAction中添加onTriggered: console.log("Cover next")。请确保停止、重建并重新运行你的应用程序以查看结果。
 
-### About Sailfish Silica Components
+### 关于Sailfish Silica组件
 
-It’s important to note that Sailfish Silica QML components are designed to be used together. While it may not be immediately obvious, several Silica components cooperate to provide platform-specific functionality.
+值得注意的是，Sailfish Silica QML组件被设计成可以一起使用。虽然它可能不是很明显，但几个Silica组件合作提供了特定平台的功能。
 
-Editable text fields are one example of this. TextField is the Silica component that provides a one-line editable text field. However, there are several other types that have an effect on how editable text fields behave.
+可编辑的文本字段就是其中的一个例子。TextField是Silica组件，它提供了一个单行可编辑文本字段。然而，还有其他几种类型对可编辑文本字段的行为方式有影响。
 
-If the TextField is not within a Silica Page, the text field may be obscured by the virtual keyboard. The Page type ensures that page content is scrolled to keep editable text fields visible when the virtual keyboard is shown. Similarly, if the root element of the QML application is not a Silica ApplicationWindow, the background of the virtual keyboard is not correctly styled making it difficult to read the keys.
+如果TextField不在Silica页面内，文本字段可能会被虚拟键盘遮住。页面类型确保页面内容被滚动，以便在虚拟键盘显示时保持可编辑的文本字段可见。同样地，如果QML应用程序的根元素不是Silica ApplicationWindow，虚拟键盘的背景就不会被正确地样式化，从而使其难以阅读按键。
 
-If you encounter situations where your application behaves differently to other Sailfish OS applications, your first course of action should be to verify that you’re not unintentionally using standard Qt Quick components when a more applicable Silica component is available. This is most likely to be an issue if you’re porting an existing QML application to Sailfish OS.
+如果你遇到你的应用程序的行为与其他Sailfish OS应用程序不同的情况，你的第一个行动应该是验证你是否在无意中使用了标准的Qt Quick组件，而更适用的Silica组件是可用的。如果你要把现有的QML应用程序移植到Sailfish OS，这很可能是一个问题。
 
-### Other Files and Directories in This Project
+### 本项目中的其他文件和目录
 
-You will notice that in addition to the .qml and .cpp files, there are a couple of other files that we have not touched so far. Let’s quickly go through them before you start exploring the SDK.
+你会注意到，除了.qml和.cpp文件外，还有一些我们到目前为止还没有接触过的文件。在你开始探索SDK之前，让我们快速浏览一下它们。
 
-`myfirstapp.desktop` is a standard Linux desktop configuration file that describes how a particular program is to be launched, how it appears in menus, etc. This file specifies for example the name and icon of your applcation as they appear in the launcher. More information on the desktop entry specification can be found at standards.freedesktop.org.
+`myfirstapp.desktop`是一个标准的Linux桌面配置文件，它描述了一个特定的程序如何被启动，如何出现在菜单中，等等。例如，这个文件指定了你的应用程序的名称和图标，因为它们出现在启动器中。关于桌面入口规范的更多信息可以在standards.freedesktop.org找到。
 
-`myfirstapp.png` is the launcher icon for the application. The Icon declaration in the .desktop file (e.g. the line Icon=myfirstapp) refers to this image file. The application template takes care of deploying the icon to the correct location, and the Icon declaration in the .desktop file should always refer to the file just by its basename without the suffix. Similarly to the main QML file, the name of the icon is based on the TARGET declaration in the project file. Hence, the icon file name should not be changed unless the TARGET declaration is also updated.
+`myfirstapp.png`是应用程序的启动器图标。.desktop文件中的Icon声明（例如Icon=myfirstapp一行）指的是这个图像文件。应用程序模板负责将图标部署到正确的位置，在.desktop文件中的Icon声明应该总是以它的基本名称而不是后缀来指代该文件。与主QML文件类似，图标的名字是基于项目文件中的TARGET声明。因此，除非TARGET声明也被更新，否则图标文件的名称不应该被改变。
 
-`myfirstapp.pro` is a project file that ties the source code and the resulting application binary together. The file describes how the application is built by creating the Makefile into the appropriate build directory, which is then executed to actually build the application. The CONFIG += sailfishapp declaration in the project file causes your project to be linked against the libsailfishapp library that provides the implementation of the SailfishApp::main() function discussed at the beginning of this tutorial. The CONFIG declaration also ensures the application binary and its data files are deployed to the proper locations both on the emulator and on devices. For more information on the format of the project file, see the qmake Manual.
+`myfirstapp.pro`是一个项目文件，将源代码和生成的应用程序二进制文件联系在一起。该文件描述了如何通过创建Makefile到适当的构建目录来构建应用程序，然后执行该文件来实际构建应用程序。项目文件中的CONFIG += sailfishapp声明使你的项目与libsailfishapp库链接，该库提供了本教程开头讨论的SailfishApp::main()函数的实现。CONFIG声明还确保应用程序的二进制文件和数据文件被部署到模拟器和设备上的适当位置。关于项目文件格式的更多信息，请参见qmake手册。
 
-The qml directory contains files that should be deployed as a part of your application. In addition to QML files, audio, image, and JavaScript files that are used by the application should be placed in this directory or in a subdirectory in it. Basically, anything you put in the qml directory gets deployed when your application is installed in the emulator or on a device.
+qml目录包含了应该作为你的应用程序的一部分而部署的文件。除了QML文件外，应用程序使用的音频、图像和JavaScript文件也应该放在这个目录或其中的一个子目录中。基本上，当你的应用程序被安装在模拟器或设备上时，你放在qml目录中的任何东西都会被部署。
 
-### Conclusion
+### 总结
 
-Creating intuitive Sailfish Silica UI applications is straightforward. The fact that they are based on QML, a declarative UI language, makes the process fast and easy. It brings in a rich set of user interface elements and an abundance of possibilities. Now you can explore and learn more about how to use them in your application. Check out the media gallery example code available in the SDK for more ideas.
+创建直观的Sailfish Silica用户界面应用程序是很简单的。事实上，它们是基于QML，一种声明性的UI语言，使这个过程快速而简单。它带来了丰富的用户界面元素和大量的可能性。现在你可以探索和学习更多关于如何在你的应用程序中使用它们。请查看SDK中提供的媒体库示例代码，以获得更多的想法。
 
-Next, [Packaging Apps](/Develop/Apps/Packaging).
+接下来，[打包应用程序](/Develop/Apps/Packaging)。
