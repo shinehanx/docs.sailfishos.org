@@ -225,7 +225,7 @@ $ sfdk device exec /usr/bin/cmakesample
 Hello, World!
 ```
 
-## 使用（不使用）Sailfish IDE编辑代码
+## 不使用Sailfish IDE编辑代码
 
 **注意：**本节仅适用于SDK\>=3.3
 
