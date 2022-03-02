@@ -1,5 +1,5 @@
 ---
-title: Allowed Permissions
+title: 允许的权限
 permalink: Develop/Apps/Harbour/Allowed_Permissions/
 parent: Harbour
 grand_parent: Apps
@@ -7,13 +7,13 @@ layout: default
 nav_order: 300
 ---
 
-This information is valid as of Sailfish OS 4.3.0 release
+这些信息从Sailfish OS 4.3.0版本开始有效。
 
-You can always check the up-to-date list from the [validator config files](https://github.com/sailfishos/sdk-harbour-rpmvalidator)
+你可以随时从[验证器配置文件](https://github.com/sailfishos/sdk-harbour-rpmvalidator)查看最新的列表。
 
-## Allowed Permissions
+## 允许的权限
 
-Your application is allowed to define the following permissions in its X-Sailjail section:
+你的应用程序允许在其X-Sailjail部分定义以下权限。
 
   - Audio
   - Bluetooth

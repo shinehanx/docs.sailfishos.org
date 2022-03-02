@@ -1,21 +1,21 @@
 ---
-title: Testing
+title: 测试
 permalink: Develop/Apps/Testing/
 parent: Apps
 layout: default
 nav_order: 900
 ---
 
-## Testing
+## 测试
 
-When testing a change, it is important to keep the testing environment as stable as possible, to ensure that the testing results are the same each time. Thus it is recommended to have the latest available SDK installed.
+在测试一个变化时，尽可能保持测试环境的稳定是很重要的，以确保每次的测试结果都是一样的。因此，建议安装最新的可用SDK。
 
-### Debugging Output & Journal
+### 调试输出和日志
 
-Most application output (including debug logging as well as warnings or critical error information) is recorded in the [systemd journal which can be tuned for your degugging needs](/Reference/Sailfish_OS_Cheat_Sheet#diagnostics)
+大多数应用程序的输出（包括调试日志以及警告或关键错误信息）都记录在[systemd日志中，可以根据你的调试需要进行调整](/Reference/Sailfish_OS_Cheat_Sheet#diagnostics)
 
-### Unit Tests
+### 单元测试
 
-Any behaviour change made by a contributor should be matched with a new unit test, to ensure that a future code change doesn't break the functionality (i.e., a regression). In most cases, the unit tests are run automatically as part of the continuous integration gating process for the package, and so the contributor should ensure that their newly added unit test is added to the "tests.xml" file (if it exists in the repository) which tells "testrunnerlite" (the CI unit-test runner) to run the test as part of integration testing. The contributor should also run all of the unit tests manually, to ensure that their code change hasn't accidentally caused a regression in behaviour.
+贡献者所做的任何行为改变都应该与新的单元测试相匹配，以确保未来的代码改变不会破坏功能（即回归）。在大多数情况下，单元测试是作为包的持续集成门控过程的一部分自动运行的，因此贡献者应该确保他们新添加的单元测试被添加到 "tests.xml "文件中（如果它存在于版本库中），这告诉 "testrunnerlite"（CI单元测试运行器）运行该测试作为集成测试的一部分。贡献者也应该手动运行所有的单元测试，以确保他们的代码变化没有意外地造成行为的回归。
 
-If a particular package doesn't include unit tests, a change may still be accepted by the maintainer even if the contribution doesn't include a unit test for that change. However, this should be considered an exception rather than the rule; where possible, unit tests should always be added. If a particular component lacks unit tests for existing functionality, this is a prime candidate for contribution from quality-focused community members! The more automatable the quality-assurance process is, the faster we can release new versions of Sailfish OS, and with higher confidence that no regressions were introduced.
+如果一个特定的软件包不包括单元测试，即使贡献者不包括该变化的单元测试，该变化仍可能被维护者接受。然而，这应该被认为是一个例外而不是规则；在可能的情况下，单元测试应该总是被添加。如果一个特定的组件缺乏对现有功能的单元测试，这将是注重质量的社区成员做出贡献的主要候选者。质量保证过程的自动化程度越高，我们就能更快地发布新版本的Sailfish OS，并且更有信心不出现倒退的情况。

@@ -19,7 +19,7 @@ The [Harbour](https://harbour.jolla.com)是Sailfish OS设备的应用程序和�
 
 在您将应用程序提交给Harbour之前，您应该通过RPM验证器运行它，以确保您的应用程序符合Harbour的规则-例如，它只使用允许的API和权限。当您使用我们的SDK创建应用程序包时，验证器会在您部署程序包时自动运行，并且您可以在编译窗口中看到验证器运行的结果。
 
-如果您想知道哪些API是允许的，它们列在[Harbour允许过的APIs](/Develop/Apps/Harbour/Allowed_APIs)页面上。同样，允许的权限列在[允许的Permissions](/Develop/Apps/Harbour/Allowed_Permissions)页面上。如果您想知道如何将API添加到允许的API列表中，有一个[ 单独的页面](/Develop/Apps/Harbour/API_Checklist)
+如果您想知道哪些API是允许的，它们列在[Harbour允许的APIs](/Develop/Apps/Harbour/Allowed_APIs)页面上。同样，允许的权限列在[允许的权限](/Develop/Apps/Harbour/Allowed_Permissions)页面上。如果您想知道如何将API添加到允许的API列表中，有一个[ 单独的页面](/Develop/Apps/Harbour/API_Checklist)
 
 ## 提交新的App
 
