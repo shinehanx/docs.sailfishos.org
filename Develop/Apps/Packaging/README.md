@@ -281,12 +281,12 @@ PkgConfigBR:
 注意`zypper`软件包管理器在模拟器和真实设备的默认配置中都不可用。在仿真器虚拟机或设备上的对应命令是`pkcon`。这两个命令的选项略有不同，其中一个可能不支持另一个的所有功能，但两者可以在一个系统上共存 - `zypper`可以用`pkcon install zypper`来安装。
 
 列出所有可用的软件包配置（用于*PkgConfigBR*关键字）。
-``nosh
+```nosh
 $ pkg-config --list-all
 ```
 
 列出已安装的软件包配置文件。
-``nosh
+```nosh
 $ ls -l /usr/lib/pkgconfig/
 ```
 
@@ -296,16 +296,16 @@ $ cat /usr/lib/pkgconfig/sailfishapp.pc
 ```
 
 找出哪个软件包提供了`Qt5Positioning`配置。
-``nosh
+```nosh
 zypper what-provides 'pkgconfig(Qt5Positioning)' 。
 ```
 
 显示所有软件包（状态栏中的'i'表示该软件包目前已安装）。
-``nosh
+```nosh
 $ zypper packages
 ```
 
 显示已安装的软件包`qt5-positioning-devel`中包含的文件。
-``nosh
+```nosh
 $ rpm -ql qt5-qtpositioning-devel
 ```
