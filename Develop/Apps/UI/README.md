@@ -7,13 +7,13 @@ layout: default
 nav_order: 800
 ---
 
-# User Experience
+# 用户体验
 
-## Logic, consistency and intuitive movement
+## 逻辑、一致和直观的动作
 
-Multitasking on Sailfish OS shows all your running apps conveniently in one single view. At a glance, you’ll see everything that’s going on, as well as easily switch between apps. You can also control Sailfish OS apps directly from the multitasking view – for example, change your music or play and pause your video stream without opening the app in full.
+Sailfish OS上的多任务功能在一个单一的视图中方便地显示你所有正在运行的应用程序。一目了然，你可以看到所有正在进行的事情，也可以轻松地在应用程序之间切换。你也可以在多任务视图中直接控制Sailfish OS的应用程序，例如，改变你的音乐或播放和暂停你的视频流，而无需完全打开应用程序。
 
-Sailfish OS works with your natural hand movements via gestures. You don’t have to push tiny buttons or search your way back home – everything is always under your thumb. Sailfish gestures soon become muscle memory and every touch-point a fluid, simple, faster task. It changes the way people interact with their devices. All about gestures, user interactions, the UI framework and more
+Sailfish OS通过手势与你的自然手部动作一起工作。你不需要按小按钮或搜索回家的路 - 一切都在你的拇指之下。Sailfish的手势很快就成为肌肉记忆，每一个触摸点都是流畅、简单、快速的任务。它改变了人们与设备的互动方式。所有关于手势、用户互动、UI框架等的内容
 
 <a href="sailfishos4.0.jpg" style="width:30em;display:block">
     <img src="sailfishos4.0.jpg"
@@ -21,43 +21,43 @@ Sailfish OS works with your natural hand movements via gestures. You don’t hav
          class="md_thumbnail" style="max-width:100%"/>
 </a>
 
-This guide provides information and support on how to create a stunning user experience for your Sailfish applications.
+本指南提供了关于如何为你的Sailfish应用程序创建一个令人惊叹的用户体验的信息和支持。
 
-## Design Principles
+## 设计原则
 
-### Effortless interaction
+### 不费吹灰之力的互动
 
-Interaction with Sailfish devices is effortless even in a hectic mobile environment. The core interactions are based on simple gestures, supported by visual, tactile and audio feedback. This enables users to interact with the device via the complete screen estate instead of forcing them to tap on tiny buttons, requiring stretching fingers or moving the device up and down within their hands. As an added bonus this permits to reveal more content during these gestures.
+即使在繁忙的移动环境中，与Sailfish设备的互动也是毫不费力的。核心的互动是基于简单的手势，由视觉、触觉和声音反馈支持。这使用户能够通过整个屏幕空间与设备互动，而不是强迫他们点击微小的按钮，需要伸展手指或在他们手中上下移动设备。作为一个额外的奖励，这允许在这些手势中显示更多的内容。
 
-### True multitasking at its best
+### 真正的多任务处理是最好的
 
-We tend to do a lot things with our phones at once involving several apps at the same time. Sailfish supports true multitasking, allowing you to quickly and seamlessly move around running apps. This keeps you up to date, enables you to fetch and play content and get something done even after pushing the app away from the foreground.
+我们倾向于在同一时间用我们的手机做很多事情，涉及几个应用程序。Sailfish支持真正的多任务，允许你快速和无缝地移动正在运行的应用程序。这可以让你保持最新的状态，使你能够获取和播放内容，甚至在把应用从前台推开后还能完成一些事情。
 
-### Reflect your ambiance
+### 反映你的氛围
 
-In Sailfish, personal style and cooperation with brands are valued. The easy tailoring of the user experience enables users to create a truly individual device, reflecting their personal style and ambience. Cooperation tailoring can reflect a brand and at the same time integrate offerings and services deeply into the Sailfish OS.
+在Sailfish中，个人风格和与品牌的合作得到了重视。对用户体验的轻松定制使用户能够创建一个真正的个人设备，反映他们的个人风格和氛围。合作定制可以反映一个品牌，同时将产品和服务深入地整合到Sailfish操作系统中。
 
-### All screen estate is yours
+### 所有的屏幕空间都是你的
 
-For the user, content is one of the most important parts of the user experience. In Sailfish the UI Chrome, the static screen estate reserved by the OS, is reduced to an absolute minimum letting the user content shine.
+对于用户来说，内容是用户体验中最重要的部分之一。在Sailfish操作系统中，用户界面Chrome，即操作系统保留的静态屏幕空间，被减少到绝对的最低限度，让用户的内容大放光彩。
 
-### Simply beautiful
+### 简单的美丽
 
-Sailfish designs are simple, beautiful and uncluttered. Content is presented clearly, text is legible, animations, haptics and sounds follow an overall theme and support user interactions. The visual style is simple, though warm and friendly; it is based on metaphors of glass and shining light.
+Sailfish的设计是简单的，美丽的，不混乱的。内容呈现清晰，文字清晰可读，动画、触觉和声音遵循整体主题，支持用户互动。视觉风格简单，但温暖友好；它是基于玻璃和闪耀的光的隐喻。
 
-### Logical
+### 逻辑性
 
-Sailfish designs are logical and consistent. Consistency means here that similar interaction flows and visuals are reused for similar tasks. Combined, these create more fluent task flows and greater user satisfaction since users can apply a flow they’ve learned easily in other areas.
+Sailfish的设计是有逻辑的和一致的。一致性在这里指的是类似的交互流程和视觉效果被重复使用于类似的任务。这些结合在一起，创造了更流畅的任务流程和更大的用户满意度，因为用户可以将他们学到的流程轻松地应用到其他领域。
 
-### Magical
+### 神奇的
 
-Instead of just doing something different, the intention behind Sailfish is to always improve, innovate and create magical design. Such solutions to problems make the user’s tasks easier, more pleasant and therefore create a positive surprise, in fact, to make the user smile a smile.
+Sailfish背后的意图是不断改进、创新和创造神奇的设计，而不仅仅是做一些不同的事情。这样的问题解决方案使用户的任务更容易，更愉快，因此创造了一个积极的惊喜，事实上，让用户笑一笑。
 
-### Integrated services
+### 综合服务
 
-Sailfish features frameworks that enable a deep integration of services. Users can access service related content and options during their core tasks instead of opening and closing a set of dedicated apps. Developers are able to hook into frameworks via plug-ins and thus speed up development time. A single plug-in is normally much easier to develop than a full UI for service features.
+Sailfish的特点是可以实现服务的深度整合的框架。用户可以在他们的核心任务中访问服务相关的内容和选项，而不是打开和关闭一组专用的应用程序。开发人员能够通过插件挂入框架，从而加快开发时间。通常情况下，单个插件的开发要比服务功能的完整UI容易得多。
 
-## UX Framework
+## UX框架
 
 <a href="pages.png" style="width:30em;display:block">
     <img src="pages.png"
@@ -65,9 +65,9 @@ Sailfish features frameworks that enable a deep integration of services. Users c
          class="md_thumbnail" style="max-width:100%"/>
 </a>
 
-### Lock Screen
+### 锁屏
 
-The Lock Screen prevents accidental usage of the device. When the display is off, you can access the lock screen by double-tapping the display or by pressing the hardware power key. On the lock screen, you can see important items such as the time and date, notification icons and other system status information without needing to unlock the device. To unlock the device, perform a right or left Edge Swipe.
+锁屏可以防止对设备的意外使用。当显示屏关闭时，你可以通过双击显示屏或按硬件电源键进入锁屏。在锁定屏幕上，你可以看到重要的项目，如时间和日期，通知图标和其他系统状态信息，而不需要解锁设备。要解锁设备，请执行右键或左键边缘滑动。
 
 <a href="lockscreen.jpg" style="width:30em;display:block">
     <img src="lockscreen.jpg"
@@ -75,21 +75,21 @@ The Lock Screen prevents accidental usage of the device. When the display is off
          class="md_thumbnail" style="max-width:100%"/>
 </a>
 
-At the top of the screen you can see important system status information such as battery and connectivity levels.
+在屏幕的顶部，你可以看到重要的系统状态信息，如电池和连接水平。
 
-You can see notification icons on the left-hand side.
+你可以在左侧看到通知图标。
 
-The bottom part indicates whether camera or the App grid is shown when swiped upwards from the lower edge.
+底部表示从下边缘向上滑动时，是否显示相机或应用程序网格。
 
 ### Home
 
-Home is the center of Sailfish OS. You always arrive here after unlocking the device and when minimizing or closing an app.
+Home是Sailfish操作系统的中心。在解锁设备后，当最小化或关闭一个应用程序时，你总是会到达这里。
 
-This is where all open apps are displayed in minimized form as Covers. From Home, you can quickly switch from one app to another or use the embedded Cover Actions, which allow you to perform an action without leaving Home (only available in native Sailfish OS apps).
+在这里，所有打开的应用程序都以最小化的形式显示在Cover上。在主页上，您可以快速地从一个应用切换到另一个应用，或者使用内嵌的Cover Actions，它允许您在不离开主页的情况下执行操作（仅适用于本地的Sailfish OS应用）。
 
-In Home, open apps are arranged in opening order and apps don’t change place when you access them again. When the amount of open apps grows to be more than what fits to the screen, Home grows vertically.
+在主页上，打开的应用程序按打开顺序排列，当你再次访问它们时，应用程序不会改变位置。当打开的应用程序的数量超过了屏幕所能容纳的数量时，主页会垂直增长。
 
-Covers can show key information of the app with a nicer layout than just minimized app view. The Cover Actions can perform a function right away without opening the app (e.g. Update, Play/Pause) or act as a shortcut to a most used sub view of an app (e.g. Search, New alarm).
+盖子可以显示应用程序的关键信息，其布局比最小化的应用程序视图更漂亮。封面动作可以在不打开应用的情况下立即执行一项功能（如更新、播放/暂停），或者作为一个应用最常用的子视图的快捷方式（如搜索、新警报）。
 
 <a href="home.jpg" style="width:30em;display:block">
     <img src="home.jpg"
@@ -97,13 +97,13 @@ Covers can show key information of the app with a nicer layout than just minimiz
          class="md_thumbnail" style="max-width:100%"/>
 </a>
 
-At the top of the screen you can see system status information such as battery and connectivity levels.
+在屏幕的顶部，你可以看到系统状态信息，如电池和连接水平。
 
-Cover Actions can be found at the bottom of the covers. Tap the icon to start the action. Tapping anywhere else switches to the app.
+封面动作可以在封面的底部找到。点击图标即可开始行动。点击其他地方可以切换到该应用。
 
 ### Events
 
-From here you can see notifications, weather and other relevant information. In addition, you can start quick actions and modify system state. Events is placed to the left of Home and thus can always be accessed from Home by swiping to right.
+从这里你可以看到通知、天气和其他相关信息。此外，你还可以启动快速行动和修改系统状态。事件 "被放置在 "主页 "的左边，因此总是可以通过向右滑动从 "主页 "进入。
 
 <a href="events.jpg" style="width:30em;display:block">
     <img src="events.jpg"
@@ -111,13 +111,13 @@ From here you can see notifications, weather and other relevant information. In 
          class="md_thumbnail" style="max-width:100%"/>
 </a>
 
-You can easily check notifications and today’s upcoming events.
+你可以轻松地检查通知和今天即将发生的事件。
 
-Make quick changes to settings here without having to open the Settings app. Use Quick Actions to start new tasks.
+在这里对设置进行快速更改，而不必打开设置应用程序。使用快速行动来启动新的任务。
 
-### Top Menu
+### 顶部菜单
 
-From the Top Menu you can lock the device, set the device to silent or switch to another Ambience. To access this menu, Edge Swipe from top from anywhere in the UI regardless of whether you are in Home, Events or even in an open app.
+在顶部菜单中，你可以锁定设备，将设备设置为静音或切换到另一个氛围。要进入这个菜单，在用户界面的任何地方从顶部轻扫，无论你是在主页、活动甚至是在一个打开的应用程序中。
 
 <a href="topmenu.jpg" style="width:30em;display:block">
     <img src="topmenu.jpg"
@@ -125,11 +125,11 @@ From the Top Menu you can lock the device, set the device to silent or switch to
          class="md_thumbnail" style="max-width:100%"/>
 </a>
 
-Long-pressing the power key also opens the Top Menu; as well as switching between Ambiences, you can also switch off the device from here.
+长按电源键还可以打开顶部菜单；除了在环境之间切换外，你还可以从这里关闭设备。
 
-### App Grid
+###应用程序网格
 
-The App Grid can be opened from anywhere in the UI with a bottom Edge Swipe, regardless of whether you are in Home, Events or within an open app. Apps can be rearranged, grouped into folders or deleted by long-pressing on any app icon. Then you can remove an app by tapping the small x, move an app by grabbing the icon and dragging it around or create a folder by dragging one app on top of another. When apps do not fit anymore to one page, more pages are added below.
+无论你是在主页、活动还是在一个打开的应用程序中，都可以从用户界面的任何地方通过底部边缘滑动来打开应用程序网格。通过长按任何应用图标，可以对应用进行重新排列，分组到文件夹或删除。然后，你可以通过点击小x来删除一个应用，通过抓住图标并拖动它来移动一个应用，或者通过将一个应用拖到另一个应用上面来创建一个文件夹。当应用程序不再适合于一个页面时，下面会添加更多的页面。
 
 <a href="appgrid.jpg" style="width:30em;display:block">
     <img src="appgrid.jpg"
@@ -137,19 +137,19 @@ The App Grid can be opened from anywhere in the UI with a bottom Edge Swipe, reg
          class="md_thumbnail" style="max-width:100%"/>
 </a>
 
-# Gestures
+# 手势
 
-## Tap
+## 轻按
 
-The most basic gesture with touch screens is tap. When you briefly touch the screen on top of an object, the default action of an object is performed.
+触摸屏最基本的手势是轻按。当你在一个物体上面短暂地触摸屏幕时，就会执行一个物体的默认动作。
 
-## Double Tap
+## 双击
 
-In Sailfish OS double tap is used to wake up the device when the display is off. In apps the double tap can be used for e.g. zooming in as an addition to pinch-to-zoom gesture. This enables better one-hand usage.
+在Sailfish OS中，当显示屏关闭时，双击可以用来唤醒设备。在应用程序中，双击可用于放大，例如，作为捏合变焦手势的补充。这使得单手使用更加方便。
 
-## Edge Swipe
+## 边缘轻扫
 
-Getting back to Home, as well as accessing App Grid and Top Menu rely on Edge Swipes. Perform an Edge Swipe by placing your finger at the very edge of the screen and moving it towards the center of the screen.
+回到主页，以及访问应用程序网格和顶部菜单都依赖于边缘轻扫。将你的手指放在屏幕的最边缘，然后向屏幕中心移动，就可以进行边缘轻扫了。
 
 <a href="edge-swipe.png" style="width:30em;display:block">
     <img src="edge-swipe.png"
@@ -157,17 +157,17 @@ Getting back to Home, as well as accessing App Grid and Top Menu rely on Edge Sw
          class="md_thumbnail" style="max-width:100%"/>
 </a>
 
-Edge Swipe from top brings up the Top Menu.
+从顶部扫过边缘会出现顶部菜单。
 
-When you are within an app, Edge Swipe from right (or left) takes you back to Home, where you can see your minimized apps.
+当你在一个应用程序中时，从右边（或左边）轻扫边缘会带你回到主页，在那里你可以看到你最小化的应用程序。
 
-You can also take a Peek at Home by starting an edge swipe and then, without lifting your finger, reversing the swipe back to the edge. This way you don’t need to actually leave the app for checking system status or updated information on app covers.
+你也可以通过开始边缘轻扫，然后在不抬起手指的情况下，反向轻扫到边缘，来偷看一下主页。这样你就不需要真正离开应用来检查系统状态或应用封面上的更新信息。
 
-Edge Swipe from bottom always opens the App Grid.
+从底部的边缘轻扫总是能打开应用程序网格。
 
-## Gestures for Navigation and Actions
+## 手势导航和操作
 
-In Sailfish OS there are also more gestures than just Edge Swipes. Following gestures are mainly used for navigating inside apps or accessing actions which are not necessarily directly visible in UI.
+在Sailfish操作系统中，除了Edge Swipes，还有更多的手势。以下手势主要用于在应用程序中导航或访问不一定在用户界面中直接可见的操作。
 
 <a href="gestures-for-navigation-and-actions.png" style="width:30em;display:block">
     <img src="gestures-for-navigation-and-actions.png"
@@ -175,19 +175,19 @@ In Sailfish OS there are also more gestures than just Edge Swipes. Following ges
          class="md_thumbnail" style="max-width:100%"/>
 </a>
 
-A glow at the top of the screen indicates that there is a Pulley Menu which contains actions for the page you are on. Move the page downwards to use the menu.
+屏幕顶部的光芒表示有一个滑动菜单，其中包含你所在页面的操作。向下移动页面以使用该菜单。
 
-Within an app, you will see a dot at the top left if you are on a sub page. To go back to the previous page, move the current page to the right.
+在一个应用程序中，如果你在一个子页面上，你会在左上方看到一个点。要回到上一个页面，请将当前页面向右移动。
 
-When you want to use actions for individual items on a page, long-press the item to open a menu of available actions.
+当你想对一个页面上的单个项目使用操作时，长按该项目可以打开一个可用操作的菜单。
 
-# Navigation architecture
+# 导航架构
 
-On a mobile device, it’s crucial to break down complexity into a sensible and understandable form. Sailfish OS apps use pages to form a simple hierarchy that’s compatible with common content and application types. Special care went into harmonizing how horizontal touch gestures are used by applications. This saves development time and make it easier for new users to get up to speed with the app.
+在移动设备上，将复杂的内容分解成合理的、可理解的形式是很关键的。Sailfish OS的应用程序使用页面来形成一个简单的层次结构，与常见的内容和应用程序类型兼容。我们特别注意协调应用程序使用水平触摸手势的方式。这节省了开发时间，使新用户更容易上手应用。
 
-## Application pages
+## 应用程序页面
 
-When opening a new application page, it stacks up with its parent. Moving application page horizontally, user can navigate back to the previous page. When a single page is not enough, you can use an attached page. It’s another page that’s appended to the page stack, after the current one. You can access it moving the current page to the opposite direction (next page, instead previous one). If you’re porting an app to Sailfish OS, you can use attached page as a replacement for the “Hamburger/basement menu” or different sidebars.
+当打开一个新的应用页面时，它与它的父级页面堆叠在一起。水平移动应用页面，用户可以导航到上一页。当一个页面不够用时，你可以使用一个附加页面。这是在当前页面之后附加到页面堆栈中的另一个页面。你可以访问它，将当前页移动到相反的方向（下一页，而不是前一页）。如果你要把一个应用程序移植到Sailfish OS上，你可以用附加页来代替 "汉堡包/地下室菜单 "或不同的侧边栏。
 
 <a href="sfos-navigation.png" style="width:30em;display:block">
     <img src="sfos-navigation.png"
@@ -195,9 +195,9 @@ When opening a new application page, it stacks up with its parent. Moving applic
          class="md_thumbnail" style="max-width:100%"/>
 </a>
 
-## Pulley menu
+## 滑动式菜单
 
-A pulley menu is an interactive extension of a page. It can be placed at the top or bottom of a page, and when user moves the content, the pulley menu is revealed. This pattern frees user from the need to reach a certain part of the screen to tap a touch target. Using a pulley menu depends of the distance between press and release coordinates alone. Keeping the number of menu options below five guarantees that the app works also in landscape orientation.
+滑动菜单是一个页面的互动扩展。它可以被放置在页面的顶部或底部，当用户移动内容时，滑动菜单就会显现。这种模式使用户无需到达屏幕的某个部分来点击触摸目标。使用滑动菜单仅取决于按压和释放坐标之间的距离。将菜单选项的数量保持在5个以下，可以保证该应用在横向上也能工作。
 
 <a href="sfos-pulley.png" style="width:30em;display:block">
     <img src="sfos-pulley.png"
@@ -205,9 +205,9 @@ A pulley menu is an interactive extension of a page. It can be placed at the top
          class="md_thumbnail" style="max-width:100%"/>
 </a>
 
-## Dialogs
+## 对话框
 
-When you need user confirmation to a functionality, use a dialog page. It uses the page stack gestures to cancel or accept the dialog. User will go back to cancel, or forward to accept the changes presented in the dialog. Dialog page has a distinctive header to separate it from a traditional page. User is taken back to the parent page, after interacting with a dialog.
+当你需要用户确认某项功能时，请使用对话页。它使用页面堆叠手势来取消或接受对话框。用户将返回以取消，或前进以接受对话框中的变化。对话页有一个独特的标题，将其与传统页面区分开来。用户在与对话框互动后会被带回到父页面。
 
 <a href="sfos-dialog.png" style="width:30em;display:block">
     <img src="sfos-dialog.png"
@@ -215,6 +215,6 @@ When you need user confirmation to a functionality, use a dialog page. It uses t
          class="md_thumbnail" style="max-width:100%"/>
 </a>
 
-# App icons
+# App图标
 
-[Find icon design here](https://sailfishos.org/design/icons/)
+[在此寻找图标设计](https://sailfishos.org/design/icons/)
