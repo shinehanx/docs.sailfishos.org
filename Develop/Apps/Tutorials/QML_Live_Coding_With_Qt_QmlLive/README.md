@@ -1,7 +1,7 @@
 ---
-title: QML Live Coding With Qt QmlLive
+title: 用Qt QmlLive进行QML实时编码
 permalink: Develop/Apps/Tutorials/QML_Live_Coding_With_Qt_QmlLive/
-parent: Tutorials
+parent: 教程
 grand_parent: Apps
 layout: default
 nav_order: 400

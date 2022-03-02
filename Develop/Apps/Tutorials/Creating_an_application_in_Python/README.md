@@ -1,7 +1,7 @@
 ---
-title: Creating an application in Python
+title: 在Python中创建应用程序
 permalink: Develop/Apps/Tutorials/Creating_an_application_in_Python/
-parent: Tutorials
+parent: 教程
 grand_parent: Apps
 layout: default
 nav_order: 200

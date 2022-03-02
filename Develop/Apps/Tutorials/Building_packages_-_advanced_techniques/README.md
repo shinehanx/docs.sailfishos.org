@@ -1,7 +1,7 @@
 ---
 title: 构建软件包 - 高级技术
 permalink: Develop/Apps/Tutorials/Building_packages_-_advanced_techniques/
-parent: Tutorials
+parent: 教程
 grand_parent: Apps
 layout: default
 nav_order: 300
