@@ -1,5 +1,5 @@
 ---
-title: Allowed APIs
+title: 允许的APIs
 permalink: Develop/Apps/Harbour/Allowed_APIs/
 parent: Harbour
 grand_parent: Apps
@@ -7,15 +7,15 @@ layout: default
 nav_order: 200
 ---
 
-This information is valid as of Sailfish OS 4.3.0 release
+这些信息从Sailfish OS 4.3.0版本开始有效。
 
-You can always check the up-to-date list from the [validator config files](https://github.com/sailfishos/sdk-harbour-rpmvalidator)
+你可以随时从[验证器配置文件](https://github.com/sailfishos/sdk-harbour-rpmvalidator)查看最新的列表。
 
-## Allowed Libraries
+## 允许的库
 
-Your application can link against the following libraries:
+你的应用程序可以与以下库链接。
 
-### Qt 5 Core libraries
+### Qt 5核心库
 
   - libQt5Core.so.5
   - libQt5Quick.so.5
@@ -23,28 +23,28 @@ Your application can link against the following libraries:
   - libQt5Network.so.5
   - libQt5Gui.so.5
 
-### Sailfish Silica library, Application Library + booster helper library
+### Sailfish Silica库，应用程序库+booster helper library
 
   - libsailfishapp.so.1
   - libmdeclarativecache5.so.0
   - libsailfishsilica.so.1
 
-### Sailfish WebView library
+### Sailfish WebView库
 
   - libqt5embedwidget.so.1
   - libsailfishwebengine.so.1
 
-### Amber Web Authorization framework
+### Amber网络授权框架
 
   - libamberwebauthorization.so.1
 
-### OpenGL ES 1.1, 2.0 and EGL
+### OpenGL ES 1.1, 2.0 和 EGL
 
   - libEGL.so.1
   - libGLESv1_CM.so.1
   - libGLESv2.so.2
 
-### Standard system and C/C++ runtime libraries
+### 标准系统和C/C++运行时库
 
   - ld-linux.so.2
   - ld-linux-armhf.so.3
@@ -59,13 +59,13 @@ Your application can link against the following libraries:
   - libz.so.1
   - libresolv.so.2
 
-### Nemo Libraries
+### Nemo库
 
   - libnemonotifications-qt5.so.1
   - libnemothumbnailer-qt5.so.1
   - libkeepalive.so.1
 
-### Additional Qt 5 modules
+### 额外的 Qt 5 模块
 
   - libQt5Concurrent.so.5
   - libQt5Multimedia.so.5
@@ -79,7 +79,7 @@ Your application can link against the following libraries:
   - libQt5Positioning.so.5
   - libQt5WebSockets.so.5
 
-### Various additional libraries that are useful
+### 各种有用的附加库
 
   - libmlite5.so.0
   - libpng16.so.16
@@ -102,19 +102,19 @@ Your application can link against the following libraries:
   - libgobject-2.0.so.0
   - libgthread-2.0.so.0
 
-### Low-level PulseAudio and Audio APIs
+### 低级别的 PulseAudio 和 Audio APIs
 
   - libpulse.so.0
   - libpulse-simple.so.0
   - libaudioresource.so.1
 
-### Low-level Wayland Protocol APIs
+### 低级别的 Wayland 协议 APIs
 
   - libwayland-client.so.0
   - libwayland-cursor.so.0
   - libwayland-egl.so.1
 
-### Multimedia
+### 多媒体
 
   - libogg.so.0
   - libvorbis.so.0
@@ -131,11 +131,11 @@ Your application can link against the following libraries:
   - libSDL2_net-2.0.so.0
   - libSDL2_ttf-2.0.so.0
 
-## Allowed QML Imports
+## 允许的 QML 进口
 
-Your app is not allowed to have QML imports matching the following patterns:
+你的应用程序不允许有符合以下模式的 QML 导入。
 
-### Disallowed QML Imports
+### 不允许的QML导入
 
   - Bluetooth.*
   - Meego.*
@@ -151,7 +151,7 @@ Your app is not allowed to have QML imports matching the following patterns:
   - com.meego.*
   - org.kde.bluezqt
 
-The exceptions to this rule are the following imports:
+这条规则的例外情况是以下的导入。
 
 ### Sailfish API
 
@@ -164,7 +164,7 @@ The exceptions to this rule are the following imports:
   - Sailfish.WebView.Popups 1.0
   - Sailfish.WebEngine 1.0
 
-### Amber Web Authorization framework
+### Amber Web授权框架
 
   - Amber.Web.Authorization 1.0
 
@@ -189,7 +189,7 @@ The exceptions to this rule are the following imports:
   - QtQuick.Window 2.2
   - QtQuick.XmlListModel 2.0
 
-### Additional QML modules
+### 额外的QML模块
 
   - QtMultimedia 5.0
   - QtMultimedia 5.1
@@ -211,7 +211,7 @@ The exceptions to this rule are the following imports:
   - QtQml.Models 2.2
   - QtQml.Models 2.3
 
-### QtFeedback hasn't been declared stable, but we allow a restricted part
+### QtFeedback 还没有被宣布为稳定的，但我们允许有限制的部分
 
   - QtFeedback 5.0
 
@@ -219,7 +219,7 @@ The exceptions to this rule are the following imports:
 
   - org.freedesktop.contextkit 1.0
 
-### Python support
+### Python支持
 
   - io.thp.pyotherside 1.0
   - io.thp.pyotherside 1.1
@@ -228,7 +228,7 @@ The exceptions to this rule are the following imports:
   - io.thp.pyotherside 1.4
   - io.thp.pyotherside 1.5
 
-### Nemo QML modules
+### Nemo QML模块
 
   - Nemo.Notifications 1.0
   - Nemo.DBus 2.0
@@ -236,11 +236,11 @@ The exceptions to this rule are the following imports:
   - Nemo.Thumbnailer 1.0
   - Nemo.KeepAlive 1.2
 
-## Allowed package dependencies
+## 允许的软件包依赖性
 
-Usually you shouldn't add library depencencies or python module dependencies to your package manually, as these dependencies are generated automatically. Your rpm packages can require the following:
+通常情况下，你不应该向你的软件包手动添加库的依赖性或python模块的依赖性，因为这些依赖性是自动生成的。你的rpm包可以要求以下内容。
 
-### Core libraries
+### 核心库
 
   - libc.so.6
   - libpthread.so.0
@@ -253,11 +253,11 @@ Usually you shouldn't add library depencencies or python module dependencies to 
   - libz.so.1
   - libgcc_s.so.1
 
-### C++ standard library
+### C++标准库
 
   - libstdc++.so.6
 
-### Other libraries
+### 其他库
 
   - libpng16.so.16
 
@@ -268,136 +268,22 @@ Usually you shouldn't add library depencencies or python module dependencies to 
 
 ### Sailfish Silica QML API
 
-  - sailfishsilica-qt5
-  - libsailfishapp
-  - mapplauncherd-booster-silica-qt5
-  - libqt5embedwidget.so.1
-  - sailfish-components-webview-qt5
-  - sailfish-components-webview-qt5-popups
-  - sailfish-components-webview-qt5-pickers
-  - libsailfishwebengine.so.1
-
-### Amber Web Authorization framework
-
-  - amber-web-authorization
-  - libamberwebauthorization.so.1
-
-### QML Imports
-
-  - qt5-qtdeclarative-import-xmllistmodel
-  - qt5-qtdeclarative-import-folderlistmodel
-  - qt5-qtdeclarative-import-localstorageplugin
-  - qt5-qtdeclarative-import-multimedia
-  - qt5-qtdeclarative-import-websockets
-  - qt5-qtqml-import-webkitplugin
-  - qt5-qtdeclarative-import-particles2
-  - qt5-qtdeclarative-qtquickparticles
-  - qt5-qtsvg
-  - qt5-qtgraphicaleffects
-  - qt5-qtdeclarative-import-positioning
-  - qt5-qtdeclarative-import-sensors
-  - qt5-qtquickcontrols-layouts
-  - qt5-qtdeclarative-import-models2
-  - qt5-qtwebsockets
-
-### Nemo QML Imports
-
-  - nemo-qml-plugin-notifications-qt5
-  - nemo-qml-plugin-dbus-qt5
-  - nemo-qml-plugin-configuration-qt5
-  - nemo-qml-plugin-thumbnailer-qt5
-  - nemo-qml-plugin-contextkit-qt5
-  - qml(org.freedesktop.contextkit)
-  - libkeepalive
-
-### Qt Modules
-
-  - qt5-qtmultimedia
-  - qt5-qtmultimedia-plugin-audio-pulseaudio
-  - qt5-qtpositioning
-
-### Image format plugins
-
-  - qt5-plugin-imageformat-gif
-  - qt5-plugin-imageformat-ico
-  - qt5-plugin-imageformat-jpeg
-  - qt5-qtsvg-plugin-imageformat-svg
-
-### Other libraries
-
-  - mlite-qt5
-  - libcrypto.so.10
-  - libcrypto.so.1.1
-  - libssl.so.10
-  - libssl.so.1.1
-  - liblzma.so.5
-  - libbz2.so.1
-  - libexpat.so.1
-  - libsqlite3.so.0
-
-### Python support
-
-  - pyotherside-qml-plugin-python3-qt5
-  - python3-gobject
-  - python3-sqlite
-  - python3dist(sqlite3)
-  - python3dist(curses)
-  - python3dist(attrs)
-  - python3dist(pygobject)
-  - python3dist(idna)
-  - python3dist(lxml)
-  - python3dist(pyopenssl)
-  - python3dist(six)
-  - python3dist(pyyaml)
-  - python3dist(zope-interface)
-  - python3dist(sortedcontainers)
-  - python3dist(toml)
-  - python3dist(twisted)
-
-### libxml2
-
-  - libxml2
-  - libxml2.so.2
-
-### Multimedia
-
-  - libogg.so.0
-  - libvorbis.so.0
-  - libvorbisenc.so.2
-  - libvorbisfile.so.3
-  - libsndfile.so.1
-
-### SDL2
-
-  - libSDL2-2.0.so.0
-  - libSDL2_gfx-1.0.so.0
-  - libSDL2_image-2.0.so.0
-  - libSDL2_mixer-2.0.so.0
-  - libSDL2_net-2.0.so.0
-  - libSDL2_ttf-2.0.so.0
-
-## Deprecated libraries
-
-The following libraries have been deprecated, and they should no longer be used in new code. They will be dropped from allowed libraries in a future release:
-
-### Deprecated from Sailfish OS 1.1.8.x onward
-
   - libpng15.so.15
 
-### Deprecated in Sailfish OS 4.0.1
+### 在Sailfish OS 4.0.1中已被弃用
 
   - libssl.so.10
   - libcrypto.so.10
 
-## Deprecated QML Imports
+## 废弃的QML输入法
 
-The following QML Imports have been renamed. The old imports should no longer be used in new code. They will be dropped from allowed imports in a future release:
+以下的QML导入已经被重新命名。旧的导入不应该再被用于新的代码中。在未来的版本中，它们将被从允许的导入中删除。
 
   - org.nemomobile.notifications 1.0
-    - Renamed as 'Nemo.Notifications 1.0'
+    - 重命名为 "Nemo.Notifications 1.0"。
   - org.nemomobile.dbus 2.0
-    - Renamed as 'Nemo.DBus 2.0'
+    - 重命名为 "Nemo.DBus 2.0"。
   - org.nemomobile.configuration 1.0
-    - Renamed as 'Nemo.Configuration 1.0'
+    - 重命名为 "Nemo.Configuration 1.0"。
   - org.nemomobile.thumbnailer 1.0
-    - Renamed as 'Nemo.Thumbnailer 1.0'
+    - 重命名为 "Nemo.Thumbnailer 1.0"。
